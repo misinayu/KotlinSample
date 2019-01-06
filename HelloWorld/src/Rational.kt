@@ -17,6 +17,7 @@ class Rational(val numerator: Int, val denominator: Int) {
     private val g by lazy { gcd(Math.abs(numerator), Math.abs(denominator)) }
     val n: Int by lazy { numerator / g }
     val d: Int by lazy { denominator / g }
+    // funの前にoperatorを付けるとmethod.plusだけでなく+記号で使えるようになる
     operator fun plus(that: Rational): Rational =
         Rational(
             n * that.denominator + that.numerator * d,
