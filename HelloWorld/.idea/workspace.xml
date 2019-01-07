@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc74d2d-8951-4a94-87d1-eda6419e8988" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/sample/Rational.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/sample/Rational.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/sample/RationalKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/sample/RationalKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rational.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rational.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Rational.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="289">
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -71,8 +72,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,7 +98,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546776957631" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546871780494" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -177,14 +178,21 @@
       <option name="project" value="LOCAL" />
       <updated>1546776304350</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create plus method in Rational class">
+      <created>1546776996459</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546776996459</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -216,7 +224,8 @@
     <MESSAGE value="Override toString function in Rational class" />
     <MESSAGE value="Create Initializer in Rational class" />
     <MESSAGE value="Modified toString" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified toString" />
+    <MESSAGE value="Create plus method in Rational class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create plus method in Rational class" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -232,8 +241,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rational.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="289">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
         </state>
       </provider>
     </entry>

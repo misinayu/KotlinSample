@@ -7,6 +7,7 @@ fun main(args: Array<String>) {
     println(half2)
     println(Rational(1, 4) + Rational(1, 2))
     println(Rational(1, 3) + Rational(4, 7))
+    println(Rational(1, 4) + 1)
 }
 
 class Rational(val numerator: Int, val denominator: Int) {
@@ -23,6 +24,9 @@ class Rational(val numerator: Int, val denominator: Int) {
             n * that.denominator + that.numerator * d,
             d * that.denominator
         )
+    // Rational同士だけでなくRational型とInt型でもplusできるようoverload
+    operator fun plus(numerator: Int): Rational =
+        Rational(n + numerator * d, d)
 
     override fun toString(): String = "${n}/${d}"
 
