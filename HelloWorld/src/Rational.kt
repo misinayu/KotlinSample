@@ -8,6 +8,7 @@ fun main(args: Array<String>) {
     println(Rational(1, 4) + Rational(1, 2))
     println(Rational(1, 3) + Rational(4, 7))
     println(Rational(1, 4) + 1)
+    println(2 + Rational(1, 4))
 }
 
 class Rational(val numerator: Int, val denominator: Int) {
@@ -34,3 +35,6 @@ class Rational(val numerator: Int, val denominator: Int) {
         if (b == 0) a
         else gcd(b, a % b)
 }
+
+// Int型 + Rational型をできるようにする拡張関数
+operator fun Int.plus(r: Rational): Rational = r + this
