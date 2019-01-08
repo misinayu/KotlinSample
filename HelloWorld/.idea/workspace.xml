@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc74d2d-8951-4a94-87d1-eda6419e8988" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BasicGrammar.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/META-INF/HelloWorld.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/META-INF/HelloWorld.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/sample/Rational.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/sample/Rational.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/sample/RationalKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/sample/RationalKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BasicGrammar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicGrammar.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BasicGrammar.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="68">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -109,7 +106,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546949705609" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546950106551" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -224,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546872144822</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Create BasicGrammar.kt&#10;&#10;lesson array">
+      <created>1546949779341</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1546949779341</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -266,7 +270,8 @@
     <MESSAGE value="Create plus method in Rational class" />
     <MESSAGE value="Make Rational + Int" />
     <MESSAGE value="Make extension function&#10;&#10;Int type + Ration type" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make extension function&#10;&#10;Int type + Ration type" />
+    <MESSAGE value="Create BasicGrammar.kt&#10;&#10;lesson array" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create BasicGrammar.kt&#10;&#10;lesson array" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -289,8 +294,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BasicGrammar.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
