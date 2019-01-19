@@ -38,6 +38,9 @@ fun hello(name: String = "World"): String = "Hello, $name!"
 //    return sum
 //}
 
-tailrec fun sum(numbers: List<Long>, accumulator: Long = 0): Long =
+fun sum(numbers: List<Long>): Long {
+    tailrec fun go(numbers: List<Long>, accumulator: Long): Long =
         if (numbers.isEmpty()) accumulator
-        else sum(numbers.drop(1), accumulator + numbers.first())
+        else go(numbers.drop(1), accumulator + numbers.first())
+    return go(numbers, 0)
+}
