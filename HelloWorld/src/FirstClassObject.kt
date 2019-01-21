@@ -5,6 +5,23 @@ fun main(args: Array<String>) {
     println(functionObject(5))
     println(firstK2("kakakakKwowKKow"))
     println(firstUpperCase2("niniCoCo"))
+    // lambda expression
+    val squareR: (Int) -> Int = { i: Int ->
+        i * i
+    }
+    // 型推論で型を省略できる
+    val squareR1 = { i: Int ->
+        i * i
+    }
+    val squareR2: (Int) -> Int = { i ->
+        i * i
+    }
+    // 引数が唯一の場合it変数が使える
+    val squareR3: (Int) -> Int = {
+        it * it
+    }
+    println(squareR(6))
+    println(firstWhitespace("str stet"))
 }
 
 fun square(i: Int): Int = i * i
@@ -49,3 +66,14 @@ fun firstUpperCase2(str: String): Int {
     fun isUpperCase(c: Char): Boolean = c.isUpperCase()
     return first(str, ::isUpperCase)
 }
+
+//fun firstWhitespace(str: String): Int {
+//    val isWhitespace: (Char) -> Boolean = {
+//        it.isWhitespace()
+//    }
+//    return first(str, isWhitespace)
+//}
+fun firstWhitespace(str: String): Int =
+        first(str, { it.isWhitespace() })
+fun firstWhitespace2(str: String): Int =
+        first(str) { it.isWhitespace() }
