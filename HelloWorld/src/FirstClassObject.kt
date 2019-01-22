@@ -22,6 +22,15 @@ fun main(args: Array<String>) {
     }
     println(squareR(6))
     println(firstWhitespace("str stet"))
+    val counter1 = getCounter()
+    val counter2 = getCounter()
+    println("-----------closure-------------")
+    println(counter1())
+    println(counter1())
+    println(counter2())
+    println(counter1())
+    println(counter2())
+    println("-----------closure-------------")
 }
 
 fun square(i: Int): Int = i * i
@@ -77,3 +86,11 @@ fun firstWhitespace(str: String): Int =
         first(str, { it.isWhitespace() })
 fun firstWhitespace2(str: String): Int =
         first(str) { it.isWhitespace() }
+
+// Closure
+fun getCounter(): ()->Int {
+    var count = 0
+    return {
+        count++
+    }
+}
