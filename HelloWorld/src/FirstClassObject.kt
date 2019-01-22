@@ -31,6 +31,10 @@ fun main(args: Array<String>) {
     println(counter1())
     println(counter2())
     println("-----------closure-------------")
+    println("-----------inline function-------------")
+    log { "このメッセージは出力される" }
+    log(false) { "このメッセージは出力されない" }
+    println("-----------inline function-------------")
 }
 
 fun square(i: Int): Int = i * i
@@ -92,5 +96,12 @@ fun getCounter(): ()->Int {
     var count = 0
     return {
         count++
+    }
+}
+
+// inline function
+inline fun log(debug: Boolean = true, message: () -> String) {
+    if (debug) {
+        println(message())
     }
 }
