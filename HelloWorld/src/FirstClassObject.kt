@@ -35,6 +35,10 @@ fun main(args: Array<String>) {
     log { "このメッセージは出力される" }
     log(false) { "このメッセージは出力されない" }
     println("-----------inline function-------------")
+    println("-----------non-local return-------------")
+    println(containsDigit("test"))
+    println(containsDigit("fd235daf"))
+    println("-----------non-local return-------------")
 }
 
 fun square(i: Int): Int = i * i
@@ -104,4 +108,19 @@ inline fun log(debug: Boolean = true, message: () -> String) {
     if (debug) {
         println(message())
     }
+}
+
+inline fun forEach(str: String, f: (Char) -> Unit) {
+    for (c in str) {
+        f(c)
+    }
+}
+
+// non-local return
+fun containsDigit(str: String): Boolean {
+    forEach(str) {
+        if (it.isDigit())
+            return true
+    }
+    return false
 }
