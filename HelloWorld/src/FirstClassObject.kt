@@ -124,3 +124,16 @@ fun containsDigit(str: String): Boolean {
     }
     return false
 }
+
+// ラムダ式
+val square1: (Int) -> Int = { i: Int ->
+    i * i
+}
+
+// 無名関数
+val square2: (Int) -> Int = fun(i: Int): Int {
+    return i * i
+}
+
+// 無名関数 省略バージョン
+val square3: (Int) -> Int = fun(i: Int) = i * i
