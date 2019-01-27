@@ -50,6 +50,15 @@ fun main(args: Array<String>) {
 
     println(bucket1.quantity) // 「３」を出力
     println(bucket2.quantity) // 「４」を出力
+
+    val bucket3: Bucket = BucketImpl(7)
+    val bucket4: Bucket = BucketImpl(4)
+
+    bucket3.fill()
+    bucket3.pourTo(bucket4)
+
+    println(bucket3.quantity)
+    println(bucket4.quantity)
 }
 
 
@@ -73,6 +82,31 @@ fun createBucket(_capacity: Int): Bucket = object : Bucket {
     override val capacity = _capacity
     override var quantity: Int = 0
 
+
+    override fun fill() {
+        quantity = capacity
+    }
+
+    override fun drainAway() {
+        quantity = 0
+    }
+
+    override fun pourTo(that: Bucket) {
+        val thatVacuity = that.capacity - that.quantity
+        if (capacity <= thatVacuity) {
+            that.quantity += quantity
+            drainAway()
+        } else {
+            that.fill()
+            quantity -= thatVacuity
+        }
+    }
+}
+
+class BucketImpl(_capacity: Int): Bucket {
+    override val capacity = _capacity
+
+    override var quantity: Int = 0
 
     override fun fill() {
         quantity = capacity
