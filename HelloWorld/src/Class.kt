@@ -17,6 +17,7 @@ fun main(args: Array<String>) {
 
     println(hanako.name)
     println(hanako.age)
+    println(hanako.nameLength)
 }
 
 class MyClass
@@ -28,6 +29,16 @@ class Greeter {
 }
 
 class Person {
+    // custom setter
     var name: String = ""
+        set(value) {
+            println("${value}がセットされました")
+            field = value
+        }
     var age: Int = 0
+    // custom getter
+    val nameLength: Int
+        get(): Int {
+            return this.name.length
+        }
 }
