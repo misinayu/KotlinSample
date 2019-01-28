@@ -20,7 +20,9 @@ fun main(args: Array<String>) {
     println(hanako.nameLength)
 }
 
-class MyClass
+class MyClass {
+    lateinit var foo: String
+}
 
 class Greeter {
     fun greet(name: String) {
