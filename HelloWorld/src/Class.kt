@@ -29,6 +29,8 @@ fun main(args: Array<String>) {
 
     Rational1(1, 1)
 //    Rational1(1, 0) this is error
+
+    println("I like Kotlin".wordsCount)
 }
 
 class MyClass {
@@ -67,3 +69,7 @@ class Rational1(val numerator: Int, val denominator: Int = 1) {
         require(denominator != 0)
     }
 }
+
+// extension function
+val String.wordsCount: Int
+    get() = split("""\s+""".toRegex()).size
