@@ -26,6 +26,9 @@ fun main(args: Array<String>) {
     val five = Rational1(5)
     println(five.numerator)
     println(five.denominator)
+
+    Rational1(1, 1)
+//    Rational1(1, 0) this is error
 }
 
 class MyClass {
@@ -58,6 +61,9 @@ class Person {
 //    val numerator: Int = n
 //    val denominator: Int = d
 //}
-class Rational1(val numerator: Int, val denominator: Int) {
-    constructor(numerator: Int): this(numerator, 1)
+class Rational1(val numerator: Int, val denominator: Int = 1) {
+    init {
+        // 要求に反した場合、例外をスローする標準ライブラリの関数
+        require(denominator != 0)
+    }
 }
