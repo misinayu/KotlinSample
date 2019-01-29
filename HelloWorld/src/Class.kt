@@ -18,6 +18,10 @@ fun main(args: Array<String>) {
     println(hanako.name)
     println(hanako.age)
     println(hanako.nameLength)
+
+    val half = Rational1(1, 2)
+    println(half.numerator)
+    println(half.denominator)
 }
 
 class MyClass {
@@ -44,3 +48,10 @@ class Person {
             return this.name.length
         }
 }
+
+// constructor
+//class Rational1 constructor(n: Int, d: Int) {
+//    val numerator: Int = n
+//    val denominator: Int = d
+//}
+class Rational1(val numerator: Int, val denominator: Int)
