@@ -22,6 +22,10 @@ fun main(args: Array<String>) {
     val half = Rational1(1, 2)
     println(half.numerator)
     println(half.denominator)
+
+    val five = Rational1(5)
+    println(five.numerator)
+    println(five.denominator)
 }
 
 class MyClass {
@@ -54,4 +58,6 @@ class Person {
 //    val numerator: Int = n
 //    val denominator: Int = d
 //}
-class Rational1(val numerator: Int, val denominator: Int)
+class Rational1(val numerator: Int, val denominator: Int) {
+    constructor(numerator: Int): this(numerator, 1)
+}
