@@ -10,10 +10,15 @@ fun main(args: Array<String>) {
     student.introduceMyself()
 }
 
-open class Person1(val name: String) {
-    fun introduceMyself() {
+open class Person1(open val name: String) {
+    open fun introduceMyself() {
         println("I am $name.")
     }
 }
 
-class Student(name: String, val id: Long): Person1(name)
+class Student(override val name: String, val id: Long): Person1(name) {
+    override fun introduceMyself() {
+        super.introduceMyself()
+        println("I am $name(id=$id)")
+    }
+}
