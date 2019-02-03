@@ -38,6 +38,14 @@ interface Fuga {
         println("Fuga")
     }
 }
+interface Foo2 {
+    fun aaa()
+    fun bbb()
+}
+interface Bar2: Foo2 {
+    override fun aaa() {}
+    fun ccc()
+}
 
 class FooBar: Foo, Bar {
     override fun execute() {
@@ -51,4 +59,9 @@ class HogeFuga : Hoge, Fuga {
     override fun execute() {
         super<Fuga>.execute()
     }
+}
+
+class Baz: Bar2 {
+    override fun bbb() {}
+    override fun ccc() {}
 }
