@@ -16,9 +16,39 @@ class EnglishGreeterInter : InterfaceGreeter {
     }
 }
 
-open class Superclass
+open class Superclass {
+    open fun execute() {
+        println("Superclass")
+    }
+}
 
-interface Foo
-interface Bar
+interface Foo {
+    fun execute()
+}
+interface Bar {
+    fun execute()
+}
+interface Hoge {
+    fun execute() {
+        println("Hoge")
+    }
+}
+interface Fuga {
+    fun execute() {
+        println("Fuga")
+    }
+}
 
-class MyInterClass: Superclass(), Foo, Bar
+class FooBar: Foo, Bar {
+    override fun execute() {
+        println("FooBar")
+    }
+}
+
+class FooSubclass : Superclass(), Foo
+
+class HogeFuga : Hoge, Fuga {
+    override fun execute() {
+        super<Fuga>.execute()
+    }
+}
