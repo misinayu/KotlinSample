@@ -15,7 +15,16 @@ fun main(args: Array<String>) {
 
     val strContainer = Container("Hello")
     println(strContainer.value.toUpperCase())
+
+    val container: Container<Int> = box(5)
+    println(container.string)
 }
 
 //class Container(var value: Any)
 class Container<T>(var value: T)
+
+fun <T> box(value: T): Container<T> =
+    Container(value)
+
+val <T> T.string: String
+    get() = toString()
