@@ -95,6 +95,11 @@ fun main(args: Array<String>) {
     } finally {
         println("finally")
     })
+
+    // メソッドの関数オブジェクト
+    println(5.inc())
+    val method = Int::inc
+    println(method)
 }
 
 // 演算子オーバーロード
