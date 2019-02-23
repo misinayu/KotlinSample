@@ -1,5 +1,11 @@
 package sample
 
+interface Hogegene
+interface Fugagene
+interface Piyogene: Hogegene, Fugagene
+class Foogene<T>
+class Bargene<T : Hogegene>
+
 fun main(args: Array<String>) {
 //    val intContainer = Container(123)
 //    val i: Int = intContainer.value as Int
@@ -18,6 +24,8 @@ fun main(args: Array<String>) {
 
     val container: Container<Int> = box(5)
     println(container.string)
+
+    Bargene<Piyogene>()
 }
 
 //class Container(var value: Any)
