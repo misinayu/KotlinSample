@@ -24,4 +24,19 @@ fun main(args: Array<String>) {
         }
         println(result)
     }
+
+    val ain: Int? = 5
+    val aInc: Int? = ain?.inc()
+
+    fun squaregene(i: Int): Int = i * i
+    val asqu: Int? = 5
+    val aSquare =
+        if (asqu != null) squaregene(asqu)
+        else null
+    println(aSquare)
+
+    val aSquare2 = asqu?.let { squaregene(it) }
+    println(aSquare2)
 }
+
+public inline fun <T, R> T.let(block: (T) -> R): R = block(this)
