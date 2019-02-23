@@ -55,7 +55,12 @@ fun main(args: Array<String>) {
     println(fooerr ?: throw AssertionError())
 
     val hogeerr: String? = null
-    println(hogeerr ?: throw AssertionError())
+//    println(hogeerr ?: throw AssertionError())
+
+    val strsafe: Any = "本当は文字列"
+    println(strsafe as String)
+//    println(strsafe as Int)
+    println(strsafe as? Int)
 }
 
 public inline fun <T, R> T.let(block: (T) -> R): R = block(this)
