@@ -1,5 +1,7 @@
 package sample
 
+import java.lang.AssertionError
+
 fun main(args: Array<String>) {
     val s: String? = null
     println(s)
@@ -41,6 +43,19 @@ fun main(args: Array<String>) {
     val foogene2: String? = "simple test"
     val bargene2: String = foogene2!!
     println(bargene2.toUpperCase())
+
+    // エルビス演算子
+    val fooel: String? = "elelelelelelel"
+    println((fooel ?: "default").toUpperCase())
+
+    val hogeel: String? = null
+    println(hogeel ?: "default")
+
+    val fooerr: String? = "HelloErr"
+    println(fooerr ?: throw AssertionError())
+
+    val hogeerr: String? = null
+    println(hogeerr ?: throw AssertionError())
 }
 
 public inline fun <T, R> T.let(block: (T) -> R): R = block(this)
