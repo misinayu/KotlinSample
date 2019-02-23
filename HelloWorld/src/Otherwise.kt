@@ -64,6 +64,11 @@ fun main(args: Array<String>) {
     JapaneseGreeter.greet("たろう")
     val greeterde: JapaneseGreeter = JapaneseGreeter
     greeterde.greet("じろう")
+
+    // コンパニオンオブジェクト
+    val dummy = Usercom.Pool.DUMMY
+    println("${dummy.id}, ${dummy.name}")
+    println(Usercom.DUMMY.name)
 }
 
 // 演算子オーバーロード
@@ -101,5 +106,11 @@ interface Greeterde {
 object JapaneseGreeter: Greeterde {
     override fun greet(name: String) {
         println("こんにちは、${name}さん！")
+    }
+}
+
+class Usercom(val id: Long, val name: String) {
+    companion object Pool{
+        val DUMMY = Usercom(0, "dummy")
     }
 }
