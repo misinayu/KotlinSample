@@ -59,6 +59,11 @@ fun main(args: Array<String>) {
         }
     }
     greeter2.greet()
+
+    // オブジェクト宣言
+    JapaneseGreeter.greet("たろう")
+    val greeterde: JapaneseGreeter = JapaneseGreeter
+    greeterde.greet("じろう")
 }
 
 // 演算子オーバーロード
@@ -87,4 +92,14 @@ data class User2(val id: Id, val name: String) {
 
 interface Greeter2 {
     fun greet()
+}
+
+interface Greeterde {
+    fun greet(name: String)
+}
+
+object JapaneseGreeter: Greeterde {
+    override fun greet(name: String) {
+        println("こんにちは、${name}さん！")
+    }
 }
