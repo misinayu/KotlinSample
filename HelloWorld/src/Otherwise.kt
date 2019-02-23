@@ -23,6 +23,20 @@ fun main(args: Array<String>) {
     println(a)
     println(b)
     println(c)
+
+    // データクラス
+    println(User(1, "Taro") == User(1, "Taro"))
+    println(User(2, "Hanako"))
+
+    val taro = User(1, "Taro")
+    println(taro)
+    val newTaro = taro.copy(id=112233)
+    println(newTaro)
+    println(taro)
+
+    val (id, name) = User(7, "hego")
+    println(id)
+    println(name)
 }
 
 // 演算子オーバーロード
@@ -42,3 +56,5 @@ class Service {
     operator fun invoke(): Char = 'A'
     operator fun invoke(c: Char) = c
 }
+
+data class User(val id: Long, val name: String)
