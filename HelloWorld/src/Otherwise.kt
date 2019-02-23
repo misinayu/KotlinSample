@@ -37,6 +37,28 @@ fun main(args: Array<String>) {
     val (id, name) = User(7, "hego")
     println(id)
     println(name)
+
+    // ネストしたクラス
+    val id2: User2.Id = User2.Id(123)
+    println(User2(id2, "test"))
+
+    // オブジェクト式
+    val myObject = object {}
+    println(myObject)
+
+    val greeter = object {
+        fun greet() {
+            println("Hello Greet")
+        }
+    }
+    greeter.greet()
+
+    val greeter2 = object : Greeter2 {
+        override fun greet() {
+            println("Hello Greeter2")
+        }
+    }
+    greeter2.greet()
 }
 
 // 演算子オーバーロード
@@ -58,3 +80,11 @@ class Service {
 }
 
 data class User(val id: Long, val name: String)
+
+data class User2(val id: Id, val name: String) {
+    data class Id(val value: Long)
+}
+
+interface Greeter2 {
+    fun greet()
+}
