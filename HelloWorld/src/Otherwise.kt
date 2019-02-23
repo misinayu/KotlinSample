@@ -1,6 +1,7 @@
 package sampleOtherwise
 
 import java.lang.Exception
+import kotlin.reflect.KProperty
 
 fun main(args: Array<String>) {
     val product = MyInt(3) * MyInt(5)
@@ -100,6 +101,12 @@ fun main(args: Array<String>) {
     println(5.inc())
     val method = Int::inc
     println(method)
+
+    // 委譲プロパティ
+    val myClass = MyClass()
+    println(myClass.str)
+    myClass.str = "ラーメン"
+    println(myClass.str)
 }
 
 // 演算子オーバーロード
@@ -163,3 +170,20 @@ fun headString(list: MyList<*>): String =
         }
 
 class MyException(message: String): Exception(message)
+
+class MyClass {
+    var _str: String? = null
+    var str: String? by object {
+        operator fun getValue(thisRef: MyClass,
+                              property: KProperty<*>): String? {
+            println("${property.name}がgetされました")
+            return _str
+        }
+
+        operator fun setValue(thisRef: MyClass,
+                              property: KProperty<*>, value: String?) {
+            println("${property.name}に${value}がsetされました")
+            _str = value
+        }
+    }
+}
