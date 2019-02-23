@@ -37,6 +37,10 @@ fun main(args: Array<String>) {
 
     val aSquare2 = asqu?.let { squaregene(it) }
     println(aSquare2)
+
+    val foogene2: String? = "simple test"
+    val bargene2: String = foogene2!!
+    println(bargene2.toUpperCase())
 }
 
 public inline fun <T, R> T.let(block: (T) -> R): R = block(this)
