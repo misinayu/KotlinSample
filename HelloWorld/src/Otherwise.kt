@@ -1,5 +1,7 @@
 package sampleOtherwise
 
+import java.lang.Exception
+
 fun main(args: Array<String>) {
     val product = MyInt(3) * MyInt(5)
     println(product.value)
@@ -75,6 +77,24 @@ fun main(args: Array<String>) {
 
     println(headString(Cons("foo", Nil)))
     println(headString(Nil))
+
+    // 例外
+//    throw MyException("例外だよ")
+    try {
+        println("try")
+    } catch (e: Exception) {
+        println("catch")
+    } finally {
+        println("finally")
+    }
+
+    println(try {
+        "ONE".toInt()
+    } catch (e: Exception) {
+        null
+    } finally {
+        println("finally")
+    })
 }
 
 // 演算子オーバーロード
@@ -136,3 +156,5 @@ fun headString(list: MyList<*>): String =
             is Cons<*> -> list.head.toString()
             else -> "要素なし"
         }
+
+class MyException(message: String): Exception(message)
