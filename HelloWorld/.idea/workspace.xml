@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc74d2d-8951-4a94-87d1-eda6419e8988" name="Default Changelist" comment="Lesson vararg">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/META-INF/HelloWorld.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/META-INF/HelloWorld.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Function.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Function.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/sample/HelloWorldKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/sample/HelloWorldKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/sample/Rational.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/sample/Rational.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/sample/RationalKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/sample/RationalKt.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,37 +18,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HelloWorld.kt">
+        <entry file="file://$PROJECT_DIR$/src/Generics.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="323">
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Rational.kt">
+        <entry file="file://$PROJECT_DIR$/src/NullSafe.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BasicGrammar.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+            <state relative-caret-position="273">
+              <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Function.kt">
+        <entry file="file://$PROJECT_DIR$/src/Otherwise.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+            <state relative-caret-position="556">
+              <caret line="188" column="1" selection-start-line="188" selection-start-column="1" selection-end-line="188" selection-end-column="1" />
+              <folding>
+                <element signature="e#25#83#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,6 +66,11 @@
         <option value="$PROJECT_DIR$/src/Rational.kt" />
         <option value="$PROJECT_DIR$/src/BasicGrammar.kt" />
         <option value="$PROJECT_DIR$/src/Function.kt" />
+        <option value="$PROJECT_DIR$/src/InheritanceAndAbstract.kt" />
+        <option value="$PROJECT_DIR$/src/Interface.kt" />
+        <option value="$PROJECT_DIR$/src/Generics.kt" />
+        <option value="$PROJECT_DIR$/src/NullSafe.kt" />
+        <option value="$PROJECT_DIR$/src/Otherwise.kt" />
       </list>
     </option>
   </component>
@@ -80,9 +81,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="952" />
+    <option name="width" value="975" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -90,6 +91,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,12 +113,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547908646077" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550905819295" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -130,54 +131,67 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.sample.FunctionKt">
-    <configuration name="sample.BasicGrammarKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.sampleOtherwise.OtherwiseKt">
+    <configuration name="sampleOtherwise.OtherwiseKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="HelloWorld" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="sample.BasicGrammarKt" />
+      <option name="MAIN_CLASS_NAME" value="sampleOtherwise.OtherwiseKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sample.FunctionKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="sample.GenericsKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="HelloWorld" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="sample.FunctionKt" />
+      <option name="MAIN_CLASS_NAME" value="sample.GenericsKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sample.HelloWorldKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="sample.InheritanceAndAbstractKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="HelloWorld" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="sample.HelloWorldKt" />
+      <option name="MAIN_CLASS_NAME" value="sample.InheritanceAndAbstractKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sample.RationalKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="sample.InterfaceKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="HelloWorld" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="sample.RationalKt" />
+      <option name="MAIN_CLASS_NAME" value="sample.InterfaceKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample.NullSafeKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="HelloWorld" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="sample.NullSafeKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -185,10 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.sample.FunctionKt" />
-        <item itemvalue="Kotlin.sample.BasicGrammarKt" />
-        <item itemvalue="Kotlin.sample.RationalKt" />
-        <item itemvalue="Kotlin.sample.HelloWorldKt" />
+        <item itemvalue="Kotlin.sampleOtherwise.OtherwiseKt" />
+        <item itemvalue="Kotlin.sample.NullSafeKt" />
+        <item itemvalue="Kotlin.sample.GenericsKt" />
+        <item itemvalue="Kotlin.sample.InterfaceKt" />
+        <item itemvalue="Kotlin.sample.InheritanceAndAbstractKt" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +344,196 @@
       <option name="project" value="LOCAL" />
       <updated>1547908096657</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Lesson Override">
+      <created>1548943356569</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1548943356569</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Lesson Abstract Member">
+      <created>1549029316859</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1549029316859</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Create Interface.kt">
+      <created>1549110517061</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1549110517061</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Lesson Interface">
+      <created>1549201229414</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1549201229414</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Lesson Conflict avoidance">
+      <created>1549201788632</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1549201788632</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Lesson Inheritance">
+      <created>1549201976033</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1549201976033</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Create Generics.kt">
+      <created>1549287496501</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1549287496501</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Lesson Generics">
+      <created>1550889509827</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1550889509827</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Lesson Generics function">
+      <created>1550889775497</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1550889775497</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Lesson Generics Restriction">
+      <created>1550890409258</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1550890409258</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Lesson Null-Safety">
+      <created>1550891681348</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1550891681348</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Lesson Smart Cast">
+      <created>1550892021146</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1550892021146</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Lesson SafeCall">
+      <created>1550893131051</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1550893131051</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Lesson !!operator">
+      <created>1550893381952</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1550893381952</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Lesson Elvis Operator">
+      <created>1550898922727</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1550898922727</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Lesson Safe Cast">
+      <created>1550899192822</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1550899192822</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Lesson Operator Overload">
+      <created>1550900016484</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1550900016484</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Lesson Equivalence">
+      <created>1550900784833</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1550900784833</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Lesson Destructuring Declaration">
+      <created>1550901195435</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1550901195435</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Lesson Data Class">
+      <created>1550901628767</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1550901628767</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Lesson Object Expression">
+      <created>1550902472941</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1550902472941</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Lesson Object Declaration">
+      <created>1550902864451</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1550902864451</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Lesson Companion Object">
+      <created>1550903435071</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1550903435071</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Algebraic data type">
+      <created>1550904355867</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1550904355867</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Algebraic data type">
+      <created>1550904755384</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1550904755384</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Method Object">
+      <created>1550905214128</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1550905214128</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Delegated Property">
+      <created>1550905733979</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1550905733979</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TodoView">
@@ -342,10 +546,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2835821" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1785235" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -354,7 +557,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -362,7 +565,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49946696" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -374,25 +577,32 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Override toString function in Rational class" />
-    <MESSAGE value="Create Initializer in Rational class" />
-    <MESSAGE value="Modified toString" />
-    <MESSAGE value="Create plus method in Rational class" />
-    <MESSAGE value="Make Rational + Int" />
-    <MESSAGE value="Make extension function&#10;&#10;Int type + Ration type" />
-    <MESSAGE value="Create BasicGrammar.kt&#10;&#10;lesson array" />
-    <MESSAGE value="Lesson List" />
-    <MESSAGE value="Lesson Set" />
-    <MESSAGE value="Lesson Map" />
-    <MESSAGE value="Lesson Range" />
-    <MESSAGE value="Lesson If else" />
-    <MESSAGE value="Lesson While" />
-    <MESSAGE value="Lesson For loop" />
-    <MESSAGE value="Create Function.kt" />
-    <MESSAGE value="Lesson Function in kotlin to first step" />
-    <MESSAGE value="Lesson Function 2" />
-    <MESSAGE value="Lesson vararg" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson vararg" />
+    <MESSAGE value="Lesson Abstract Member" />
+    <MESSAGE value="Create Interface.kt" />
+    <MESSAGE value="Lesson Interface" />
+    <MESSAGE value="Lesson Conflict avoidance" />
+    <MESSAGE value="Lesson Inheritance" />
+    <MESSAGE value="Create Generics.kt" />
+    <MESSAGE value="Lesson Generics" />
+    <MESSAGE value="Lesson Generics function" />
+    <MESSAGE value="Lesson Generics Restriction" />
+    <MESSAGE value="Lesson Null-Safety" />
+    <MESSAGE value="Lesson Smart Cast" />
+    <MESSAGE value="Lesson SafeCall" />
+    <MESSAGE value="Lesson !!operator" />
+    <MESSAGE value="Lesson Elvis Operator" />
+    <MESSAGE value="Lesson Safe Cast" />
+    <MESSAGE value="Lesson Operator Overload" />
+    <MESSAGE value="Lesson Equivalence" />
+    <MESSAGE value="Lesson Destructuring Declaration" />
+    <MESSAGE value="Lesson Data Class" />
+    <MESSAGE value="Lesson Object Expression" />
+    <MESSAGE value="Lesson Object Declaration" />
+    <MESSAGE value="Lesson Companion Object" />
+    <MESSAGE value="Algebraic data type" />
+    <MESSAGE value="Method Object" />
+    <MESSAGE value="Delegated Property" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delegated Property" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -424,6 +634,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
           <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InheritanceAndAbstract.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generics.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NullSafe.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Otherwise.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="188" column="1" selection-start-line="188" selection-start-column="1" selection-end-line="188" selection-end-column="1" />
+          <folding>
+            <element signature="e#25#83#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
