@@ -2,9 +2,11 @@ package com.example.qiitaclient
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ListView
+import android.widget.ProgressBar
 import com.example.qiitaclient.model.Article
 import com.example.qiitaclient.model.User
 import com.example.qiitaclient.view.ArticleView
@@ -24,15 +26,16 @@ class MainActivity : RxAppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val listAdapter = ArticleListAdapter(applicationContext)
-        listAdapter.articles = listOf(dummyArticle("Kotlin入門", "たろう"),
-            dummyArticle("Java入門", "じろう"))
-
         val listView: ListView = findViewById(R.id.list_view) as ListView
+        val progressBar = findViewById(R.id.progress_bar) as ProgressBar
+        val queryEditText = findViewById(R.id.query_edit_text) as EditText
+        val searchButton = findViewById(R.id.search_button) as Button
+
+        val listAdapter = ArticleListAdapter(applicationContext)
         listView.adapter = listAdapter
         listView.setOnItemClickListener { adapterView, view, position, id ->
-            val article = listAdapter.articles[position]
-            ArticleActivity.intent(this, article).let { startActivity(it) }
+            val intent = ArticleActivity.intent(this, listAdapter.articles[position])
+            startActivity(intent)
         }
 
         val gson = GsonBuilder()
@@ -45,13 +48,15 @@ class MainActivity : RxAppCompatActivity() {
             .build()
         val articleClient = retrofit.create(ArticleClient::class.java)
 
-        val queryEditText = findViewById(R.id.query_edit_text) as EditText
-        val searchButton = findViewById(R.id.search_button) as Button
-
         searchButton.setOnClickListener {
+            progressBar.visibility = View.VISIBLE
+
             articleClient.search(queryEditText.text.toString())
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
+                .doAfterTerminate {
+                    progressBar.visibility = View.GONE
+                }
                 .bindToLifecycle(this)
                 .subscribe({
                     queryEditText.text.clear()
