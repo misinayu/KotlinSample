@@ -2,8 +2,11 @@ package com.example.musicplayersample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button playBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
