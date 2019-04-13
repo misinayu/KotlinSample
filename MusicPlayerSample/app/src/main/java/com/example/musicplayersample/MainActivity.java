@@ -1,12 +1,20 @@
 package com.example.musicplayersample;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button playBtn;
+    private SeekBar positionBar;
+    private SeekBar volumeBar;
+    private TextView elapsedTimeLavel;
+    private TextView remainingTimeLabel;
+    private MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
