@@ -20,5 +20,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        playBtn = findViewById(R.id.playBtn);
+        elapsedTimeLavel = findViewById(R.id.elapsedTimeLabel);
+        remainingTimeLabel = findViewById(R.id.remainingTimeLabel);
     }
 }
