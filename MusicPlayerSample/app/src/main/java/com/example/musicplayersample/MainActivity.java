@@ -24,5 +24,11 @@ public class MainActivity extends AppCompatActivity {
         playBtn = findViewById(R.id.playBtn);
         elapsedTimeLavel = findViewById(R.id.elapsedTimeLabel);
         remainingTimeLabel = findViewById(R.id.remainingTimeLabel);
+
+        // Media Playerの初期化
+        mp = MediaPlayer.create(this, R.raw.music01);
+        mp.setLooping(true);
+        mp.seekTo(0);
+        mp.setVolume(0.5f, 0.5f);
     }
 }
