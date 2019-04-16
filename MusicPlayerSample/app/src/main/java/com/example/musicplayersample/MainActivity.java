@@ -3,6 +3,7 @@ package com.example.musicplayersample;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -30,5 +31,17 @@ public class MainActivity extends AppCompatActivity {
         mp.setLooping(true);
         mp.seekTo(0);
         mp.setVolume(0.5f, 0.5f);
+    }
+
+    public void playBtnClick(View view) {
+        if (!mp.isPlaying()) {
+            // 停止中
+            mp.start();
+            playBtn.setBackgroundResource(R.drawable.stop);
+        } else {
+            // 再生中
+            mp.pause();
+            playBtn.setBackgroundResource(R.drawable.play);
+        }
     }
 }
