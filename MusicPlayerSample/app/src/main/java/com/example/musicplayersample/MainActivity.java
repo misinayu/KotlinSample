@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView elapsedTimeLavel;
     private TextView remainingTimeLabel;
     private MediaPlayer mp;
+    private int totalTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mp.setLooping(true);
         mp.seekTo(0);
         mp.setVolume(0.5f, 0.5f);
+        totalTime = mp.getDuration();
 
         // 音量調整
         volumeBar = findViewById(R.id.volumeBar);
