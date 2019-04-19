@@ -34,6 +34,31 @@ public class MainActivity extends AppCompatActivity {
         mp.setVolume(0.5f, 0.5f);
         totalTime = mp.getDuration();
 
+        // 再生位置
+        positionBar = findViewById(R.id.positionBar);
+        positionBar.setMax(totalTime);
+        positionBar.setOnSeekBarChangeListener(
+                new SeekBar.OnSeekBarChangeListener() {
+                    @Override
+                    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                        if (fromUser) {
+                            mp.seekTo(progress);
+                            positionBar.setProgress(progress);
+                        }
+                    }
+
+                    @Override
+                    public void onStartTrackingTouch(SeekBar seekBar) {
+
+                    }
+
+                    @Override
+                    public void onStopTrackingTouch(SeekBar seekBar) {
+
+                    }
+                }
+        );
+
         // 音量調整
         volumeBar = findViewById(R.id.volumeBar);
         volumeBar.setOnSeekBarChangeListener(
