@@ -1,6 +1,8 @@
 package com.example.musicplayersample;
 
 import android.media.MediaPlayer;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -80,6 +82,28 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+
+        // Thread (positionBar・経過時間ラベル・残り時間ラベルを更新する)
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (mp != null) {
+                   try {
+                       Message msg = new Message();
+                       msg.what = mp.getCurrentPosition();
+                       handler.sendMessage(msg);
+                       Thread.sleep(1000);
+                   } catch (InterruptedException e) {}
+                }
+            }
+        }).start();
+    }
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            int currentPosition = msg.what;
+        }
     }
 
     public void playBtnClick(View view) {
