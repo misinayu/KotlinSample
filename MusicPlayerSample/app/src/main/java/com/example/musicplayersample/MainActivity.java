@@ -103,8 +103,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void handleMessage(Message msg) {
             int currentPosition = msg.what;
+
+            // 再生位置を更新
+            positionBar.setProgress(currentPosition);
         }
-    }
+    };
 
     public void playBtnClick(View view) {
         if (!mp.isPlaying()) {
