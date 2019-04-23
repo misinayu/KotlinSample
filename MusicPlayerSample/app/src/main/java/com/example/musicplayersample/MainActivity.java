@@ -106,8 +106,28 @@ public class MainActivity extends AppCompatActivity {
 
             // 再生位置を更新
             positionBar.setProgress(currentPosition);
+
+            // 経過時間ラベル更新
+            String elapsedTime = createTimeLabel(currentPosition);
+            elapsedTimeLavel.setText(elapsedTime);
+
+            // 残り時間ラベル更新
+            String remainingTime = createTimeLabel(totalTime - currentPosition);
+            remainingTimeLabel.setText("- " + remainingTime);
         }
     };
+
+    public String createTimeLabel(int time) {
+        String timeLabel = "";
+        int min = time / 1000 / 60;
+        int sec = time / 1000 % 60;
+
+        timeLabel = min + ":";
+        if (sec < 10) timeLabel += "0";
+        timeLabel += sec;
+
+        return timeLabel;
+    }
 
     public void playBtnClick(View view) {
         if (!mp.isPlaying()) {
