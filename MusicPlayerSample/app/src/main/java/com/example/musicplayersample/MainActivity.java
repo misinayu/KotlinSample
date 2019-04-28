@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Button playBtn;
     private SeekBar positionBar;
     private SeekBar volumeBar;
-    private TextView elapsedTimeLavel;
+    private TextView elapsedTimeLabel;
     private TextView remainingTimeLabel;
     private MediaPlayer mp;
     private int totalTime;
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         playBtn = findViewById(R.id.playBtn);
-        elapsedTimeLavel = findViewById(R.id.elapsedTimeLabel);
+        elapsedTimeLabel = findViewById(R.id.elapsedTimeLabel);
         remainingTimeLabel = findViewById(R.id.remainingTimeLabel);
 
         // Media Playerの初期化
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
             // 経過時間ラベル更新
             String elapsedTime = createTimeLabel(currentPosition);
-            elapsedTimeLavel.setText(elapsedTime);
+            elapsedTimeLabel.setText(elapsedTime);
 
             // 残り時間ラベル更新
             String remainingTime = createTimeLabel(totalTime - currentPosition);
