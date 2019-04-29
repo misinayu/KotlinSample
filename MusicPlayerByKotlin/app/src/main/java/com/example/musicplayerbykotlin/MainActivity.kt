@@ -20,5 +20,6 @@ class MainActivity : AppCompatActivity() {
         val remainingTimeLabel: TextView = findViewById(R.id.remainingTimeLabel) as TextView
 
         // Media Playerの初期化
+        var mp: MediaPlayer? = MediaPlayer.create(this, R.raw.music01)
     }
 }
