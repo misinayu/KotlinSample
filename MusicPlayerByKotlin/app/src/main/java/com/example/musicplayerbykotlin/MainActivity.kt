@@ -21,5 +21,30 @@ class MainActivity : AppCompatActivity() {
 
         // Media Playerの初期化
         var mp: MediaPlayer? = MediaPlayer.create(this, R.raw.music01)
+        mp?.isLooping
+        mp?.seekTo(0)
+        mp?.setVolume(0.5f, 0.5f)
+        val totalTime: Int = mp?.duration as Int
+
+        // 再生位置
+        positionBar.max = totalTime
+        positionBar.setOnSeekBarChangeListener(
+            object : SeekBar.OnSeekBarChangeListener {
+                override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                    if (fromUser) {
+                        mp?.seekTo(progress)
+                        positionBar.setProgress(progress)
+                    }
+                }
+
+                override fun onStartTrackingTouch(p0: SeekBar?) {
+                    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                }
+
+                override fun onStopTrackingTouch(p0: SeekBar?) {
+                    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                }
+            }
+        )
     }
 }
