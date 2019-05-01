@@ -46,5 +46,23 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         )
+
+        // 音量調整
+        volumeBar.setOnSeekBarChangeListener(
+            object : SeekBar.OnSeekBarChangeListener {
+                override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                    val volumeNum: Float = progress / 100f
+                    mp?.setVolume(volumeNum, volumeNum)
+                }
+
+                override fun onStartTrackingTouch(p0: SeekBar?) {
+                    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                }
+
+                override fun onStopTrackingTouch(p0: SeekBar?) {
+                    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                }
+            }
+        )
     }
 }
