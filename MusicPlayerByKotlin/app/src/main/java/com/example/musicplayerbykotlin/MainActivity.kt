@@ -3,6 +3,7 @@ package com.example.musicplayerbykotlin
 import android.media.MediaPlayer
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Message
 import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
@@ -64,5 +65,21 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         )
+
+        // Thread (positionBar・経過時間ラベル・残り時間ラベルを更新する)
+        val thread = Thread(
+            object : Runnable {
+                override fun run() {
+                    while (mp != null) {
+                        try {
+                            val msg : Message = Message()
+                            msg.what = mp?.currentPosition
+                            // TODO:: handler
+                        } catch (e: InterruptedException) {}
+                    }
+                }
+            }
+        )
+        thread.start()
     }
 }
