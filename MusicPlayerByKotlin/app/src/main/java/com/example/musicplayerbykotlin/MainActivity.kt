@@ -13,19 +13,27 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    var totalTime: Int = 0
-    var mp: MediaPlayer? = null
-    var playBtn: Button = null as Button
-    var elapsedTimeLabel: TextView = null as TextView
-    var remainingTimeLabel: TextView = null as TextView
+    var totalTime: Int
+    var mp: MediaPlayer?
+    var playBtn: Button
+    var elapsedTimeLabel: TextView
+    var remainingTimeLabel: TextView
+
+    init {
+        totalTime = 0
+        mp = null
+        playBtn = findViewById(R.id.playBtn) as Button
+        elapsedTimeLabel = findViewById(R.id.elapsedTimeLabel) as TextView
+        remainingTimeLabel = findViewById(R.id.remainingTimeLabel) as TextView
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        playBtn = findViewById(R.id.playBtn) as Button
-        elapsedTimeLabel = findViewById(R.id.elapsedTimeLabel) as TextView
-        remainingTimeLabel = findViewById(R.id.remainingTimeLabel) as TextView
+//        playBtn = findViewById(R.id.playBtn) as Button
+//        elapsedTimeLabel = findViewById(R.id.elapsedTimeLabel) as TextView
+//        remainingTimeLabel = findViewById(R.id.remainingTimeLabel) as TextView
 
         val positionBar: SeekBar = findViewById(R.id.positionBar) as SeekBar
         val volumeBar: SeekBar = findViewById(R.id.volumeBar) as SeekBar
