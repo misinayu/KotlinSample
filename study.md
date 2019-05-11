@@ -17,5 +17,10 @@
  - Utilities methods for ViewModelStore class.
 - ViewModelProviders.of
  - Creates a ViewModelProvider, which retains ViewModels while a scope of given Activity is alive.
-- Returns an existing ViewModel or creates a new one in the scope (usually, a gragment or an activity), associated with this ViewModelProvider.
+- ViewModelProviders.get
+ - Returns an existing ViewModel or creates a new one in the scope (usually, a gragment or an activity), associated with this ViewModelProvider.
+
+## 2019/05/11
+#### do
+- reading souce code
 
