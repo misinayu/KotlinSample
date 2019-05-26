@@ -34,6 +34,64 @@
                 android:text="Title"
                 android:textAlignment="center"
                 android:textSize="18sp"/>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15sp"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp">
+
+                <TextView
+                    android:id="@+id/textView_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:00" />
+
+                <TextView
+                    android:id="@+id/textView_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="0:00" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/button_prev"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="@color/colorAccent"
+                    app:srcCompat="@drawable/ic_launcher_background"/><!--TODO::ここは別のものに変える必要あり-->
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/button_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/ic_launcher_background"/><!--TODO::ここは別のものに変える必要あり-->
+
+                <ImageView
+                    android:id="@+id/button_next"
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    android:layout_margin="15sp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="@color/colorAccent"
+                    app:srcCompat="@drawable/ic_launcher_background"/><!--TODO::ここは別のものに変える必要あり-->
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>
