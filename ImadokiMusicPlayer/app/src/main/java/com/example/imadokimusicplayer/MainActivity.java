@@ -2,7 +2,6 @@ package com.example.imadokimusicplayer;
 
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.media.
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageButton;
@@ -15,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     MediaBrowserCompat mBrowser;
     MediaControllerCompat mController;
 
-    // TODO::UI関係の宣言
+    // UI関係の宣言
     TextView textView_title;
     TextView textView_position;
     TextView textView_duration;
@@ -31,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // TODO::UIのセットアップ
+        textView_title = findViewById(R.id.textView_title);
+
 
         // サービスを開始する
         // Activity破棄と同時にServiceも停止して良いならこれは不要
