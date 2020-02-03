@@ -42,6 +42,7 @@ class Category extends StatelessWidget {
             color: color,
             units: units,
           ),
+          resizeToAvoidBottomPadding: false,
         );
       },
     ));
@@ -49,37 +50,33 @@ class Category extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Material(
       color: Colors.transparent,
       child: Container(
         height: _rowHeight,
         child: InkWell(
           borderRadius: _borderRadius,
-          highlightColor: color,
-          splashColor: color,
+          highlightColor: color['highlight'],
+          splashColor: color['splash'],
           onTap: () => _navigateToConverter(context),
-          child: Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Padding(
-                  padding: EdgeInsets.all(16.0),
-                  child: Icon(
-                    iconLocation,
-                    size: 60.0,
-                  ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Icon(
+                  iconLocation,
+                  size: 60.0,
                 ),
-                Center(
-                  child: Text(
-                    name,
-                    textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.headline,
-                  ),
-                )
-              ],
-            ),
+              ),
+              Center(
+                child: Text(
+                  name,
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.headline,
+                ),
+              ),
+            ],
           ),
         ),
       ),
