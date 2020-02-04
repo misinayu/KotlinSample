@@ -12,7 +12,6 @@ class Category extends StatelessWidget {
   final IconData iconLocation;
   final List<Unit> units;
 
-  // TODO:: You'll need the name, color, and iconLocation from main.dart
   const Category(
       {Key key,
       @required this.name,
